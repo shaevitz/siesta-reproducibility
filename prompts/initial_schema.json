@@ -1,0 +1,1785 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "image_id": {
+      "type": "string"
+    },
+    "leg_chains": {
+      "additionalProperties": false,
+      "properties": {
+        "forelegL4": {
+          "additionalProperties": false,
+          "properties": {
+            "body_coxa": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "femur_tibia": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "proximal_femur": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "tibia_tarsus": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "body_coxa",
+            "proximal_femur",
+            "femur_tibia",
+            "tibia_tarsus",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        "forelegR4": {
+          "additionalProperties": false,
+          "properties": {
+            "body_coxa": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "femur_tibia": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "proximal_femur": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "tibia_tarsus": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "body_coxa",
+            "proximal_femur",
+            "femur_tibia",
+            "tibia_tarsus",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        "hindlegL4": {
+          "additionalProperties": false,
+          "properties": {
+            "body_coxa": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "femur_tibia": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "proximal_femur": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "tibia_tarsus": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "body_coxa",
+            "proximal_femur",
+            "femur_tibia",
+            "tibia_tarsus",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        "hindlegR4": {
+          "additionalProperties": false,
+          "properties": {
+            "body_coxa": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "femur_tibia": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "proximal_femur": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "tibia_tarsus": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "body_coxa",
+            "proximal_femur",
+            "femur_tibia",
+            "tibia_tarsus",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        "midlegL4": {
+          "additionalProperties": false,
+          "properties": {
+            "body_coxa": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "femur_tibia": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "proximal_femur": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "tibia_tarsus": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "body_coxa",
+            "proximal_femur",
+            "femur_tibia",
+            "tibia_tarsus",
+            "evidence"
+          ],
+          "type": "object"
+        },
+        "midlegR4": {
+          "additionalProperties": false,
+          "properties": {
+            "body_coxa": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "femur_tibia": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "proximal_femur": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            },
+            "tibia_tarsus": {
+              "additionalProperties": false,
+              "properties": {
+                "confidence": {
+                  "enum": [
+                    "high",
+                    "medium",
+                    "low"
+                  ],
+                  "type": "string"
+                },
+                "state": {
+                  "enum": [
+                    "observed",
+                    "inferred",
+                    "prior_only"
+                  ],
+                  "type": "string"
+                },
+                "xy": {
+                  "items": {
+                    "maximum": 351,
+                    "minimum": 0,
+                    "type": "integer"
+                  },
+                  "maxItems": 2,
+                  "minItems": 2,
+                  "type": "array"
+                }
+              },
+              "required": [
+                "xy",
+                "state",
+                "confidence"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "body_coxa",
+            "proximal_femur",
+            "femur_tibia",
+            "tibia_tarsus",
+            "evidence"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "forelegL4",
+        "forelegR4",
+        "midlegL4",
+        "midlegR4",
+        "hindlegL4",
+        "hindlegR4"
+      ],
+      "type": "object"
+    },
+    "neighbor_overlap": {
+      "enum": [
+        "none",
+        "present",
+        "uncertain"
+      ],
+      "type": "string"
+    },
+    "points": {
+      "additionalProperties": false,
+      "properties": {
+        "abdomen": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "eyeL": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "eyeR": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "forelegL4": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "forelegR4": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "head": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "hindlegL4": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "hindlegR4": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "midlegL4": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "midlegR4": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "thorax": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "wingL": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        },
+        "wingR": {
+          "additionalProperties": false,
+          "properties": {
+            "identity_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "location_confidence": {
+              "enum": [
+                "high",
+                "medium",
+                "low"
+              ],
+              "type": "string"
+            },
+            "reason": {
+              "type": "string"
+            },
+            "state": {
+              "enum": [
+                "observed",
+                "inferred",
+                "prior_only"
+              ],
+              "type": "string"
+            },
+            "uncertainty_radius_px": {
+              "maximum": 176,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "xy": {
+              "items": {
+                "maximum": 351,
+                "minimum": 0,
+                "type": "integer"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            }
+          },
+          "required": [
+            "xy",
+            "state",
+            "location_confidence",
+            "identity_confidence",
+            "uncertainty_radius_px",
+            "reason"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "head",
+        "thorax",
+        "abdomen",
+        "eyeL",
+        "eyeR",
+        "wingL",
+        "wingR",
+        "forelegL4",
+        "forelegR4",
+        "midlegL4",
+        "midlegR4",
+        "hindlegL4",
+        "hindlegR4"
+      ],
+      "type": "object"
+    },
+    "pose_description": {
+      "type": "string"
+    },
+    "posture_assessment": {
+      "enum": [
+        "dorsal",
+        "ventral",
+        "lateral",
+        "oblique",
+        "uncertain"
+      ],
+      "type": "string"
+    }
+  },
+  "required": [
+    "image_id",
+    "pose_description",
+    "posture_assessment",
+    "neighbor_overlap",
+    "points",
+    "leg_chains"
+  ],
+  "type": "object"
+}

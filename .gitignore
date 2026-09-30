@@ -1,0 +1,16 @@
+.DS_Store
+.pytest_cache/
+.venv/
+__pycache__/
+*.egg-info/
+dist/
+build/
+runs/
+*.slp
+*.ckpt
+*.pt
+*.mp4
+!/movies/*.mp4
+*.avi
+*.h5
+*.hdf5

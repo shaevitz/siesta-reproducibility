@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 350" role="img" aria-labelledby="title desc">
+  <title id="title">SIESTA</title>
+  <desc id="desc">The locked SIESTA self-supervision mark beside the SIESTA wordmark.</desc>
+  <g transform="translate(20 15) scale(0.5)">
+    <!-- Posteriorly swept wings, with no decorative veins. -->
+    <g fill="#EEF6F7" fill-opacity="0.12" stroke="#EEF6F7" stroke-width="8" stroke-linejoin="round">
+      <path d="M238 207C226 169 209 113 190 78C180 75 171 90 174 110C179 153 196 195 219 226C227 237 236 239 243 231Z"/>
+      <path d="M274 207C286 169 303 113 322 78C332 75 341 90 338 110C333 153 316 195 293 226C285 237 276 239 269 231Z"/>
+    </g>
+
+    <!-- Three anatomically ordered leg pairs, each visibly articulated. -->
+    <g fill="none" stroke="#EEF6F7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M222 210L190 220L157 192L127 168M290 210L322 220L355 192L385 168"/>
+      <path d="M216 226L179 229L146 244L108 247M296 226L333 229L366 244L404 247"/>
+      <path d="M225 248L198 263L179 286L160 307M287 248L314 263L333 286L352 307"/>
+    </g>
+    <g fill="#EEF6F7">
+      <circle cx="127" cy="168" r="5"/><circle cx="385" cy="168" r="5"/>
+      <circle cx="108" cy="247" r="5"/><circle cx="404" cy="247" r="5"/>
+      <circle cx="160" cy="307" r="5"/><circle cx="352" cy="307" r="5"/>
+    </g>
+
+    <!-- Compact dorsal head-thorax-abdomen body plan. -->
+    <g fill="#EEF6F7" stroke="#EEF6F7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M228 82C235 59 277 59 284 82L292 176C289 198 276 209 256 212C236 209 223 198 220 176Z" stroke="none"/>
+      <path d="M227 106C244 115 268 115 285 106M224 132C243 142 269 142 288 132M222 158C242 169 270 169 290 158M223 183C243 194 269 194 289 183" fill="none" stroke="#071A2B" stroke-width="5" stroke-opacity="0.78"/>
+      <ellipse cx="256" cy="225" rx="42" ry="48" stroke="none"/>
+      <path d="M244 191C250 211 250 239 244 258M268 191C262 211 262 239 268 258" fill="none" stroke="#071A2B" stroke-width="4" stroke-opacity="0.68"/>
+      <ellipse cx="256" cy="280" rx="38" ry="29" stroke="none"/>
+      <path d="M246 300C249 309 252 314 256 320M266 300C263 309 260 314 256 320" fill="none" stroke-width="6"/>
+    </g>
+    <g fill="#F04438" stroke="#071A2B" stroke-width="4">
+      <ellipse cx="237" cy="280" rx="13" ry="19" transform="rotate(-8 237 280)"/>
+      <ellipse cx="275" cy="280" rx="13" ry="19" transform="rotate(8 275 280)"/>
+    </g>
+    <g fill="#FFFFFF">
+      <circle cx="233" cy="274" r="3"/><circle cx="271" cy="274" r="3"/>
+    </g>
+
+    <!-- One straight mirror plane. -->
+    <line x1="58" y1="320" x2="454" y2="320" stroke="#A6ADB7" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="256" cy="320" r="11" fill="#FFC857" stroke="#071A2B" stroke-width="5"/>
+
+    <!-- Exact mirrored pose. Large filled circles are the 13 SIESTA landmarks. -->
+    <g transform="translate(0 640) scale(1 -1)">
+      <g fill="none" stroke="#2CD3D9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M256 280L256 225L256 59"/>
+        <path d="M256 280L237 280M256 280L275 280"/>
+        <path d="M256 225L190 78M256 225L322 78"/>
+        <path d="M256 225L222 210L190 220L157 192L127 168M256 225L290 210L322 220L355 192L385 168"/>
+        <path d="M256 225L216 226L179 229L146 244L108 247M256 225L296 226L333 229L366 244L404 247"/>
+        <path d="M256 225L225 248L198 263L179 286L160 307M256 225L287 248L314 263L333 286L352 307"/>
+      </g>
+      <g fill="#071A2B" stroke="#2CD3D9" stroke-width="4">
+        <circle cx="190" cy="220" r="6"/><circle cx="157" cy="192" r="6"/><circle cx="322" cy="220" r="6"/><circle cx="355" cy="192" r="6"/>
+        <circle cx="179" cy="229" r="6"/><circle cx="146" cy="244" r="6"/><circle cx="333" cy="229" r="6"/><circle cx="366" cy="244" r="6"/>
+        <circle cx="198" cy="263" r="6"/><circle cx="179" cy="286" r="6"/><circle cx="314" cy="263" r="6"/><circle cx="333" cy="286" r="6"/>
+      </g>
+      <g fill="#2CD3D9" stroke="#071A2B" stroke-width="4">
+        <circle cx="256" cy="280" r="12"/><circle cx="256" cy="225" r="14"/><circle cx="256" cy="59" r="10"/>
+        <circle cx="237" cy="280" r="9"/><circle cx="275" cy="280" r="9"/>
+        <circle cx="190" cy="78" r="10"/><circle cx="322" cy="78" r="10"/>
+        <circle cx="127" cy="168" r="9"/><circle cx="385" cy="168" r="9"/>
+        <circle cx="108" cy="247" r="9"/><circle cx="404" cy="247" r="9"/>
+        <circle cx="160" cy="307" r="9"/><circle cx="352" cy="307" r="9"/>
+      </g>
+    </g>
+
+  </g>
+  <text x="340" y="226" fill="#EEF6F7" font-family="Avenir Next, Avenir, Montserrat, Century Gothic, Helvetica Neue, Arial, sans-serif" font-size="150" font-weight="600" letter-spacing="11">SIESTA</text>
+</svg>

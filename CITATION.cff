@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying preprint."
+title: "SIESTA reproducibility code"
+type: software
+version: 0.1.0
+date-released: 2026-09-30
+license: MIT
+repository-code: "https://github.com/shaevitz/siesta-reproducibility"
+authors:
+  - family-names: Shaevitz
+    given-names: Joshua W.
+  - family-names: Sierra
+    given-names: Matthew G.
+  - family-names: Kim
+    given-names: Sarah Kuo
+  - family-names: Pletcher
+    given-names: Scott D.

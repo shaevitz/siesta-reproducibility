@@ -1,0 +1,184 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "image_id": {
+      "type": "string"
+    },
+    "issues": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "concern": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "issue_id": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nodes": {
+            "items": {
+              "enum": [
+                "head",
+                "thorax",
+                "abdomen",
+                "eyeL",
+                "eyeR",
+                "wingL",
+                "wingR",
+                "forelegL4",
+                "forelegR4",
+                "midlegL4",
+                "midlegR4",
+                "hindlegL4",
+                "hindlegR4"
+              ],
+              "type": "string"
+            },
+            "maxItems": 13,
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+          },
+          "temporal_question": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "issue_id",
+          "nodes",
+          "concern",
+          "temporal_question"
+        ],
+        "type": "object"
+      },
+      "maxItems": 30,
+      "minItems": 0,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "point_checks": {
+      "additionalProperties": false,
+      "properties": {
+        "abdomen": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "eyeL": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "eyeR": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "forelegL4": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "forelegR4": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "head": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "hindlegL4": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "hindlegR4": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "midlegL4": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "midlegR4": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "thorax": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "wingL": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        },
+        "wingR": {
+          "enum": [
+            "ok",
+            "review"
+          ],
+          "type": "string"
+        }
+      },
+      "required": [
+        "head",
+        "thorax",
+        "abdomen",
+        "eyeL",
+        "eyeR",
+        "wingL",
+        "wingR",
+        "forelegL4",
+        "forelegR4",
+        "midlegL4",
+        "midlegR4",
+        "hindlegL4",
+        "hindlegR4"
+      ],
+      "type": "object"
+    },
+    "summary": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "image_id",
+    "summary",
+    "point_checks",
+    "issues"
+  ],
+  "type": "object"
+}

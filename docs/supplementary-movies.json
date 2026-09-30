@@ -1,0 +1,47 @@
+{
+  "storage": "Git LFS",
+  "repository_directory": "movies",
+  "identity_accuracy_independently_evaluated": false,
+  "pose_coordinates_altered_by_identity_association": false,
+  "movies": [
+    {
+      "paper_label": "S1",
+      "dataset": "10-fly",
+      "recording": "recording A",
+      "filename": "SupplementalMovie1.mp4",
+      "repository_path": "movies/SupplementalMovie1.mp4",
+      "download_url": "https://github.com/shaevitz/siesta-reproducibility/blob/main/movies/SupplementalMovie1.mp4",
+      "coverage": "complete recording",
+      "width": 960,
+      "height": 720,
+      "frame_rate": "30/1",
+      "container_frame_count": 18000,
+      "duration_seconds": 600.0,
+      "size_bytes": 33170021,
+      "sha256": "af93a00dd6979bb0f7a54d149bafb0262e9dd5c0572bf44959d435064b0be852",
+      "preparation": "Byte-identical copy of the existing share-ready H.264 720p overlay."
+    },
+    {
+      "paper_label": "S2",
+      "dataset": "16-fly",
+      "recording": "first four-arena recording",
+      "filename": "SupplementalMovie2.mp4",
+      "repository_path": "movies/SupplementalMovie2.mp4",
+      "download_url": "https://github.com/shaevitz/siesta-reproducibility/blob/main/movies/SupplementalMovie2.mp4",
+      "coverage": "first quarter, packet-boundary rounded",
+      "source_frame_count": 359750,
+      "source_duration_seconds": 3598.939576,
+      "requested_duration_seconds": 899.734894,
+      "width": 1280,
+      "height": 720,
+      "active_image_width": 720,
+      "active_image_height": 720,
+      "frame_rate": "2499/25",
+      "container_frame_count": 89940,
+      "duration_seconds": 899.759904,
+      "size_bytes": 116621956,
+      "sha256": "0201833380dfe93e22e9f1e75cebd146b7d85eed6d5ed1b4b07e78491b8ebf3d",
+      "preparation": "Stream-copy excerpt of the existing H.264 720p overlay, from start through 899.734894 seconds requested duration, with MP4 faststart. No video re-encoding or new inference."
+    }
+  ]
+}
